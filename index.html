@@ -10,13 +10,24 @@
     <main>
         <section id="login">
             <div id="imagem">
-                
+
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem vindo/a, Faz o login para aceder a tua conta.</p>
                 <form action="login.php" method="post">
-                    
+                
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required>
+                </p>
+                <p>
+                    <label for="ipassword">Password:</label>
+                    <input type="password" name="password" id="ipassword" minlength="8" maxlength="10" required>
+                </p>
+                <p><a href="#">Dificuldades ao iniciar sessão?</a></p>
+                <input type="submit" value="Iniciar Sessão" id="botaoiniciar">
+                <p><a href="#">Ainda não tens conta? Cria uma.</a></p>
                 </form>
             </div>
         </section>
